@@ -1,0 +1,200 @@
+/* General styles for the body */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e8f5e9;
+    color: black;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+/* Fixed Header */
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000;  /* Ensure header is always on top */
+}
+
+#header img {
+    height: 50px;
+    margin: 0 10px;
+}
+
+/* Main Content */
+main {
+    margin-top: 80px;  /* Give space for the fixed header */
+    padding: 20px;
+}
+
+.dynamic-message {
+    margin-top: 20px;
+    color: green;
+    font-weight: bold;
+} 
+
+/* Styling for the banner */
+#banner {
+    background-color: #e8f5e9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid #e8f5e9;
+}
+
+#banner img {
+    height: 50px;
+}
+
+#banner h1 {
+    margin: 0;
+    font-size: 50px;
+}
+
+#date-banner {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Form styling */
+form {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Heading styles */
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #00796b;
+    text-align: center;
+}
+
+/* Input and form element styling */
+input[type="text"],
+input[type="password"],
+textarea,
+select,
+input[type="range"] {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+/* Buttons */
+button {
+    background-color: #00796b;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Checkbox and radio button groups */
+td input[type="checkbox"], td label {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.flex {
+    display: flex;
+    align-items: center; /* Align items vertically centered */
+    justify-content: space-between; /* Space out items */
+}
+
+.form-group {
+    margin-top: 10px; /* Space between the label and input elements */
+}
+
+.checkbox-group,
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+}
+
+.checkbox-group label,
+.radio-group label {
+    margin-right: 5px; /* Space between checkbox/radio items */
+}
+
+/* Review section styling */
+#reviewSection {
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 20px;
+    display: none; /* Hidden by default */
+    background-color: #f9f9f9;
+}
+
+/* Footer styling */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 1000; 
+}
+
+footer a {
+    color: #00796b;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Links */
+a {
+    color: #00796b;
+}
+
+a:visited {
+    color: #004d40;
+}
+
+/* Special styles for SSN input validation */
+#ssn {
+    outline: 0;
+}
+
+#ssn:valid {
+    border-color: green;
+}
+/* Styles for iframe container */
+#iframe-container {
+    margin: 20px auto;
+    text-align: center;
+}
+
+iframe {
+    border: 2px solid #ddd; /* Adds a light border around the iframe */
+    border-radius: 8px;      /* Rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.653); /* Optional shadow */
+}
